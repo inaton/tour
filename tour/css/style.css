@@ -1,0 +1,111 @@
+img.bgmaximage {
+    position:fixed !important;
+}
+
+#maincontent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+}
+h1{
+    /*text-align:center;/*文字を中央に寄せる*/
+    /*background-color:#663300;/*背景色：茶*/
+    font-size: 180%;/*文字の大きさ：普通 */
+    color:#FFFFFF;/*文字色：白*/
+}
+
+h2{
+    font-size: 90%;
+    color:#FFFFFF;/*文字色：白*/
+}
+
+
+body {
+    background: url("../img/background.jpg") repeat scroll left top transparent;
+    margin: 0;
+    padding: 10px;
+}
+
+img {
+    border: medium none;
+}
+
+#grid-content {
+    overflow: hidden;
+    height: 0;
+    /*border: 1px solid #eb6100;*/
+    background-color: rgba(0,0,0,0.50);
+    background-repeat: repeat;
+    line-height: 110%;
+
+}
+/* IE6、IE7対応 */
+#grid-content {
+    /background-color: #000000;
+    /opacity: 0.8;
+    /filter: alpha(opacity=80);
+}
+
+#grid-content div {
+    width: 250px;
+    /*border: 1px solid #3B3B3B;*/
+    background: rgb(50,50,50);
+    background: rgba(50,50,50,100);
+    color: #FFFFFF;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;*/         /* CSS3 */
+    -moz-border-radius: 5px;*/    /* Firefox */
+    -webkit-border-radius: 6px;*/ /* Safari,Chrome */
+    font-size: 90%;
+}
+
+#grid-content div.large {
+    width: 520px;
+}
+#grid-content div h3 {
+    margin: 0px;
+    padding: 0px;
+}
+#grid-content div p {
+    margin: 1px;
+    padding: 1px;
+}
+
+#grid-content div li {
+    line-height: 150%;
+}
+
+
+#grid-content a:hover img
+{
+    opacity:0.8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha( opacity=80 )";
+    background: #FFFFFF;
+}
+
+a{/*リンクされた文字*/
+    color:0000ff;
+    font-style:normal;
+    text-decoration:underline;
+}
+a:link {/*未訪問のリンク*/
+    color:#99CCFF;
+    font-style:normal;
+    text-decoration:underline;
+}
+a:visited {/*訪問後のリンク*/
+    color:#FFCCCC;
+    text-decoration:underline;
+}
+a:hover {/*マウスをのせたとき*/
+    color:#ff0000;
+    font-style:normal;
+    text-decoration:underline;
+}
+a:active {/*クリック中*/
+    text-decoration:none;
+}
