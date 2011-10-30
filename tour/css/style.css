@@ -44,8 +44,10 @@ img {
 /* IE6、IE7対応 */
 #grid-content {
     /background-color: #000000;
+/*
     /opacity: 0.8;
     /filter: alpha(opacity=80);
+*/
 }
 
 #grid-content div {
@@ -67,10 +69,10 @@ img {
 }
 #grid-content div h3 {
     margin: 0px;
-    padding: 0px;
+    padding: 1px;
 }
 #grid-content div p {
-    margin: 1px;
+    margin: 10px;
     padding: 1px;
 }
 
@@ -78,6 +80,10 @@ img {
     line-height: 150%;
 }
 
+#sliderContent {
+    margin: 0px;
+    padding: 0px;
+}
 
 #grid-content a:hover img
 {
@@ -109,3 +115,10 @@ a:hover {/*マウスをのせたとき*/
 a:active {/*クリック中*/
     text-decoration:none;
 }
+
+/* モーダルウィンドウ */
+
+$("#sample").modal({
+	minHeight:400,
+	minWidth: 600
+});
