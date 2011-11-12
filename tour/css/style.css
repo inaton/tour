@@ -1,14 +1,45 @@
-img.bgmaximage {
-    position:fixed !important;
+#wrapper {
+	display: none;
 }
 
-#maincontent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    width: 100%;
+#introduction {
+	margin: 50px;
+	text-align :centor; /*IE6*/
+	margin-left:auto;
+	margin-right:auto;
+	width:540px;
 }
+
+#introduction div{
+    background: rgb(50,50,50);
+    background: rgba(50,50,50,100);
+    color: #FFFFFF;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;*/         /* CSS3 */
+    -moz-border-radius: 5px;*/    /* Firefox */
+    -webkit-border-radius: 6px;*/ /* Safari,Chrome */
+    font-size: 100%;
+}
+#introduction p{
+    line-height: 1.3em;
+}
+#staffname {
+	text-align: right;
+}
+
+#linkmenu {
+	margin: 10px;
+}
+#linkmenu a:hover img{
+    opacity:0.8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha( opacity=80 )";
+}
+}#header {
+    margin: 30px;
+}
+
 h1{
     /*text-align:center;/*文字を中央に寄せる*/
     /*background-color:#663300;/*背景色：茶*/
@@ -23,6 +54,7 @@ h2{
 
 
 body {
+	/* display: none; */
     background: url("../img/background.jpg") repeat scroll left top transparent;
     margin: 0;
     padding: 10px;
@@ -61,14 +93,14 @@ img {
     border-radius: 5px;*/         /* CSS3 */
     -moz-border-radius: 5px;*/    /* Firefox */
     -webkit-border-radius: 6px;*/ /* Safari,Chrome */
-    font-size: 90%;
+    font-size: 80%;
 }
 
 #grid-content div.large {
     width: 520px;
 }
 #grid-content div h3 {
-    margin: 0px;
+    margin: 10px;
     padding: 1px;
 }
 #grid-content div p {
@@ -85,8 +117,7 @@ img {
     padding: 0px;
 }
 
-#grid-content a:hover img
-{
+#grid-content a:hover img {
     opacity:0.8;
     filter: alpha(opacity=80);
     -ms-filter: "alpha( opacity=80 )";
@@ -115,10 +146,3 @@ a:hover {/*マウスをのせたとき*/
 a:active {/*クリック中*/
     text-decoration:none;
 }
-
-/* モーダルウィンドウ */
-
-$("#sample").modal({
-	minHeight:400,
-	minWidth: 600
-});
